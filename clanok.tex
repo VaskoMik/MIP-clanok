@@ -1,43 +1,9 @@
-%% Metódy inžinierskej práce
-%
-%\documentclass[10pt,twoside,slovak,a4paper]{article}
-%%\userpackage[margin=1.25in]{geometry}
-%%\userpackage{graphicx}
-%\usepackage{graphicx}
-%\begin{document}
-%\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
-%
-%\paragraph{Veľmi dôležitá poznámka.}
-%Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
-%
-%
-%
-%\section{Dôležitá časť} \label{dolezita}
-%
-%
-%
-%
-%\section{Ešte dôležitejšia časť} \label{dolezitejsia}
-%
-%
-%
-%
-%\section{Záver} \label{zaver} % prípadne iný variant názvu
-%
-%
-%
-%%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
-%
-%
-%% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
-%\bibliography{literatura}
-%\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
-%\end{document}
 % Metódy inžinierskej práce
 
 \documentclass[10pt,twoside,slovak,a4paper]{article}
 
 \usepackage[slovak]{babel}
+%\usepackage[T1]{fontenc}
 \usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
@@ -51,7 +17,11 @@
 
 \title{Názov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2015/16, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
 
-
+\author{Meno Priezvisko\\[2pt]
+	{\small Slovenská technická univerzita v Bratislave}\\
+	{\small Fakulta informatiky a informačných technológií}\\
+	{\small \texttt{...@stuba.sk}}
+	}
 
 \date{\small 30. september 2015} % upravte
 
@@ -133,7 +103,7 @@ Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom
 
 \section{Dôležitá časť} \label{dolezita}
 
-I made some slight change /HUGE CHAAAAAAANGE
+
 
 
 \section{Ešte dôležitejšia časť} \label{dolezitejsia}
@@ -150,5 +120,5 @@ I made some slight change /HUGE CHAAAAAAANGE
 
 % týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
 \bibliography{literatura}
-\bibliographystyle{alpha} % prípadne alpha, abbrv alebo hociktorý iný
+\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
 \end{document}
