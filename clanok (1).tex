@@ -1,0 +1,145 @@
+% Metódy inžinierskej práce
+
+\documentclass[10pt,twoside,slovak,a4paper]{article}
+
+\usepackage[slovak]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{url} % príkaz \url na formátovanie URL
+\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+
+\usepackage{cite}
+%\usepackage{times}
+
+
+\pagestyle{headings}
+
+\title{Modelling UX and UI for human-machine interaction design for mobile applications\thanks{Predbežná verzia článku v predmete Metódy inžinierskej práce, ak. rok 2021/22, vedenie: Fedor Lehocki}} % meno a priezvisko vyučujúceho na cvičeniach
+
+\author{Vasko Mykhailo\\[2pt]
+	{\small Slovenská technická univerzita v Bratislave}\\
+	{\small Fakulta informatiky a informačných technológií}\\
+	{\small \texttt{xvaskom@stuba.sk}}
+	}
+
+\date{\small 9 october 2021} % upravte
+
+
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\ldots 1)	I chose this theme because User Interface and Experience is very important in usage of an app, and good UX can achieve very good interaction effect, and hope it will help to get understanding how to build responsive and comfortable UX and UI for mobile apps.
+
+2)	Good UI and UX are in demand now as never before. “As the relationship between humans and technology continues to evolve, it’s more important than ever for businesses to emphasize UX design in mobile app development initiatives. Truly understanding a product’s user, researching to solve user pain-points, learning about latent behaviors and needs is the only way to ensure exceptional product performance”. ~\cite{WinNT}
+
+3)	The problem is apps that have amazing functional and great possibilities in commercialization but because of bad UI or UX don’t have or lose users. \cite{Examples}
+
+4)	Simplest solution is to hire UI and UX designers to a project, that will do research and design for product, but I’m here to educate developers to understand steps to make good User Design and Interface and how it is made.
+
+5)	 A lot of apps have amazing design, because they have done a lot of research, analysis and design on top of experimenting with it.
+
+6)	This article is about all stages of modelling and creating up-to-date design of an app from scratch and ways to make it better. 
+
+Future resources:
+
+~\cite{XiangqianFu2010}
+~\cite{Salihu2018}
+~\cite{Gao2017}
+~\cite{Agolli2017}
+~\cite{Kuusinen2014}
+~\cite{WaterfallUX}
+\end{abstract}
+
+
+
+%\section{Úvod}
+%
+%Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
+%
+%Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
+%Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
+%Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
+%Záverečné poznámky prináša časť~\ref{zaver}.
+%
+%
+%
+%\section{Nejaká časť} \label{nejaka}
+%
+%Z obr.~\ref{f:rozhod} je všetko jasné. 
+%
+%\begin{figure*}[tbh]
+%\centering
+%%\includegraphics[scale=1.0]{diagram.pdf}
+%Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
+%\caption{Rozhodujúci argument.}
+%\label{f:rozhod}
+%\end{figure*}
+%
+%
+%
+%\section{Iná časť} \label{ina}
+%
+%Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
+%
+%Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
+%
+%
+%\subsection{Nejaké vysvetlenie} \label{ina:nejake}
+%
+%Niekedy treba uviesť zoznam:
+%
+%\begin{itemize}
+%\item jedna vec
+%\item druhá vec
+%	\begin{itemize}
+%	\item x
+%	\item y
+%	\end{itemize}
+%\end{itemize}
+%
+%Ten istý zoznam, len číslovaný:
+%
+%\begin{enumerate}
+%\item jedna vec
+%\item druhá vec
+%	\begin{enumerate}
+%	\item x
+%	\item y
+%	\end{enumerate}
+%\end{enumerate}
+%
+%
+%\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
+%
+%\paragraph{Veľmi dôležitá poznámka.}
+%Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
+%
+%
+%
+%\section{Dôležitá časť} \label{dolezita}
+%
+%
+%
+%
+%\section{Ešte dôležitejšia časť} \label{dolezitejsia}
+%
+%
+%
+%
+%\section{Záver} \label{zaver} % prípadne iný variant názvu
+%
+%
+%
+%%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
+%
+%
+%% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
+\bibliography{literatura}
+\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
+\end{document}
