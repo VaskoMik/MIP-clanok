@@ -1,8 +1,8 @@
 % Metódy inžinierskej práce
 
-\documentclass[10pt,twoside,slovak,a4paper]{article}
+\documentclass[10pt,twoside,english,a4paper]{article}
 
-\usepackage[slovak]{babel}
+\usepackage[english]{babel}
 %\usepackage[T1]{fontenc}
 \usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
 \usepackage[utf8]{inputenc}
@@ -24,7 +24,7 @@
 	{\small \texttt{xvaskom@stuba.sk}}
 	}
 
-\date{\small 9 october 2021} % upravte
+\date{\small 11 November 2021} % upravte
 
 
 
@@ -33,112 +33,108 @@
 
 \maketitle
 
-\begin{abstract}
-\ldots 1)	I chose this theme because User Interface and Experience is very important in usage of an app, and good UX can achieve very good interaction effect, and hope it will help to get understanding how to build responsive and comfortable UX and UI for mobile apps.
-
-2)	Good UI and UX are in demand now as never before. “As the relationship between humans and technology continues to evolve, it’s more important than ever for businesses to emphasize UX design in mobile app development initiatives. Truly understanding a product’s user, researching to solve user pain-points, learning about latent behaviors and needs is the only way to ensure exceptional product performance”. ~\cite{WinNT}
-
-3)	The problem is apps that have amazing functional and great possibilities in commercialization but because of bad UI or UX don’t have or lose users. \cite{Examples}
-
-4)	Simplest solution is to hire UI and UX designers to a project, that will do research and design for product, but I’m here to educate developers to understand steps to make good User Design and Interface and how it is made.
-
-5)	 A lot of apps have amazing design, because they have done a lot of research, analysis and design on top of experimenting with it.
-
-6)	This article is about all stages of modelling and creating up-to-date design of an app from scratch and ways to make it better. 
-
-Future resources:
-
-~\cite{XiangqianFu2010}
-~\cite{Salihu2018}
-~\cite{Gao2017}
-~\cite{Agolli2017}
-~\cite{Kuusinen2014}
-~\cite{WaterfallUX}
-\end{abstract}
+%\begin{abstract}
+%\ldots 1)	I chose this theme because User Interface and Experience is very important in usage of an app, and good UX can achieve very good interaction effect, and hope it will help to get understanding how to build responsive and comfortable UX and UI for mobile apps.
+%
+%2)	Good UI and UX are in demand now as never before. “As the relationship between humans and technology continues to evolve, it’s more important than ever for businesses to emphasize UX design in mobile app development initiatives. Truly understanding a product’s user, researching to solve user pain-points, learning about latent behaviors and needs is the only way to ensure exceptional product performance”. ~\cite{WinNT}
+%
+%3)	The problem is apps that have amazing functional and great possibilities in commercialization but because of bad UI or UX don’t have or lose users. \cite{Examples}
+%
+%4)	Simplest solution is to hire UI and UX designers to a project, that will do research and design for product, but I’m here to educate developers to understand steps to make good User Design and Interface and how it is made.
+%
+%5)	 A lot of apps have amazing design, because they have done a lot of research, analysis and design on top of experimenting with it.
+%
+%6)	This article is about all stages of modelling and creating up-to-date design of an app from scratch and ways to make it better. 
+%
+%
+%\end{abstract}
 
 
 
-%\section{Úvod}
-%
-%Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
-%
-%Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
-%Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
-%Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
-%Záverečné poznámky prináša časť~\ref{zaver}.
-%
-%
-%
-%\section{Nejaká časť} \label{nejaka}
-%
-%Z obr.~\ref{f:rozhod} je všetko jasné. 
-%
-%\begin{figure*}[tbh]
-%\centering
-%%\includegraphics[scale=1.0]{diagram.pdf}
-%Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
-%\caption{Rozhodujúci argument.}
-%\label{f:rozhod}
-%\end{figure*}
-%
-%
-%
-%\section{Iná časť} \label{ina}
-%
-%Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
-%
-%Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
-%
-%
-%\subsection{Nejaké vysvetlenie} \label{ina:nejake}
-%
-%Niekedy treba uviesť zoznam:
-%
-%\begin{itemize}
-%\item jedna vec
-%\item druhá vec
-%	\begin{itemize}
-%	\item x
-%	\item y
-%	\end{itemize}
-%\end{itemize}
-%
-%Ten istý zoznam, len číslovaný:
-%
-%\begin{enumerate}
-%\item jedna vec
-%\item druhá vec
-%	\begin{enumerate}
-%	\item x
-%	\item y
-%	\end{enumerate}
-%\end{enumerate}
-%
-%
-%\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
-%
-%\paragraph{Veľmi dôležitá poznámka.}
-%Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
-%
-%
-%
-%\section{Dôležitá časť} \label{dolezita}
-%
-%
-%
-%
-%\section{Ešte dôležitejšia časť} \label{dolezitejsia}
-%
-%
-%
-%
-%\section{Záver} \label{zaver} % prípadne iný variant názvu
-%
-%
-%
-%%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
-%
-%
+\section{Introduction}
+
+Comfort in usage of your favorite app, or ease of use in the app you just downloaded- these are examples of good combination of UX and UI. But sometimes apps that have amazing functional and great possibilities in commercialization struggle because of bad UI or UX, don’t have or lose users or don't get enough attention.%In recent years people use smartphones more and more in everyday life. According to Q3 2018 Nielsen Total Audience Report \cite{AudienceReport}, overall total media use remains unchanged year-over-year at 10-and-a-half hours a day, or 44\% of the total minutes available in a day.
+ Today I will tell about User Experience and User Interface design in mobile apps and why it’s so important in using app and viewing content\cite{Examples}. 
+ The purpose of this text is to help understand the importance of UI and UX design, show the main differences between them and how it’s usually created, answer a lot UX and UI questions for newbies and some features. I chose this theme because user interface and experience gradually become more widespread and known and although very promising direction, it is now one of the most demanded professions in the digital industry. How long it will be in demand depends on the development of this industry. And, apparently, it is only gaining momentum.
+
+
+\section{Difference between UX and UI} \label{UX/UI}
+\subsection{Difference}
+
+UX stands for User Experience. It describes certain experience user gets interacting with interface of an app. It responds for ease of use and simplicity: if user can find some function and go back quickly and easily, UX is done well.
+
+UI is the User Interface – appearance of the interface and its characteristics: styling, color scheme, physical characteristics (where elements should be) and other sections like suitability of color range and how elements work together, will for user be convenient to hit that button. 
+
+The common misconception is that these two fields are common and interchangeable. UX is a core of an app, it focuses on success of use in general. The UX designer plans how you interact with the interface and what steps you need to take to get something done. And the UI designer comes up with how each of these steps will look like. In the workflow, the UX is done first, and then the UI. As you can see from the examples above, UX and UI are so closely related that sometimes the line between concepts is blurred.
+
+\subsection{History}
+The profession of UX/UI designer has existed for a long time, it just wasn't called like that before. More precisely, before it was not called at all, but was part of other professions.
+
+Here’s an example: when Wilhelm Schickard invented arithmometer, he was already a UX/UI designer, due to the fact he was the one who designed which tumblers and in what sequence a person should turn in order to get the end result of the calculations. He additionally found out in what logical order they might be located. He found out how most of these pens might look. He created an interface for interacting with the machine.
+
+
+
+\section{User Interface} \label{UI}
+\subsection{Principles} 
+User interface design is an essential a part of the display screen products. According to psychology, we can divide interface design into two levels: visual and emotional. There are three principles of User interface design: the user interface to under control, Reduce the burden of user memory, maintain the consistency of the interface. Feeling level between man and machine refers to the visual, auditory aspect and touch. Emotional level refers to communicate between man and machine because of a harmonious relationship. User interface design flow into the structure design, interaction design, and visual design of three components in the work.
+
+Niekedy treba uviesť zoznam:
+
+\begin{itemize}
+\item Structure design
+\begin{enumerate}
+
+\item Interface with the color and style is unified interface system: general color should close software and system interface. Certainly reasonable combination is system interface design including icons, button style in different operating conditions and the visual effects.
+\item Unique interface framework: interface architecture, securities trading and map manipulation interface characteristics goes in pace with with industry standards.
+	\end{enumerate}
+\item Interactive design
+
+Interaction design aims to make the products so that users can simply use, simplify user operation flow. Therefore, the human factor should be the core of the design.
+
+\item Visual design
+Pleasing visible layout used to achieve the purpose of the user. Coherent interface should be the size for aesthetic point of view, feel comfortable and coordination, can be effective to attract the user's attention within. At the same time colors of interface closely connected with color theory and color harmony…
+\end{itemize}
+
+\subsection{Design process}
+Consists of few steps: 
+\begin{itemize}
+\item         Acquisition targets the habit of user interaction
+\item        Prompt and guide the user
+\item        Follow the usability: software should be understandable, achievable and controllable by user.
+\end{itemize}
+
+\subsection{Trends}
+UI design is a dynamic field that brings us new trends every year. These are some trends in UI that are likely to dominate next few years:
+\begin{itemize}
+\item Minimalistic UI
+\item Neumorphism
+\item Asymmetry
+\item Negative space
+\item Imperfect elements
+\item 3D elements and parallax
+\item
+\item
+\end{itemize}
+
+\section{User Experience} \label{UX}
+
+\subsection{Methods}
+
+\subsection{Stages of creating}	
+
+\subsection{Trends}
+
+\section{Discussion}
+\subsection{Future of UI and UX}
+\subsection{Qualities of the UX designer of tomorrow}
+
+\section{Conclusion}
+The first step to solving any task is to define it. Understanding the
+differences between UI and UX will help you more competently approach design projects, distribute work and correctly lead the process of creating a design. There are few principles and concepts that you should keep in mind designing an app, that I wrote in this article, and they will help you create the very good design that everyone strives for.	
+
+%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
+
+
 %% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
 \bibliography{literatura}
 \bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
