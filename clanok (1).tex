@@ -9,6 +9,7 @@
 \usepackage{graphicx}
 \usepackage{url} % príkaz \url na formátovanie URL
 \usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+\usepackage{tabularx}
 
 \usepackage{cite}
 %\usepackage{times}
@@ -90,15 +91,24 @@ User interface design is an essential a part of the display screen products. Acc
 Interaction design aims to make the products so that users can simply use, simplify user operation flow. Therefore, the human factor should be the core of the design.
 
 \item Visual design
+
 Pleasing visible layout used to achieve the purpose of the user. Coherent interface should be the size for aesthetic point of view, feel comfortable and coordination, can be effective to attract the user's attention within. At the same time colors of interface closely connected with color theory and color harmony…
 \end{itemize}
 
 \subsection{Design process}
 Consists of few steps: 
 \begin{itemize}
-\item         Context and user recognition
-\item         Navigational and systemic interface design
-\item        Distributional design of interface
+%\item         Context and user recognition
+%\item         Navigational and systemic interface design
+%\item        Distributional design of interface
+\item Confirm target customer
+\item Research habits of target's interaction
+\item Develop structure design
+\item Develop interactive design
+\item Develop visual design
+\item Test usability of the prototype
+%\item 
+%\item 
 \item Products prototype design - follow the usability: software should be understandable, achievable and controllable by user. \cite{XiangqianFu2010}
 \end{itemize}
 
@@ -111,31 +121,70 @@ UI design is a dynamic field that brings us new trends every year. These are som
 \item Negative space
 \item Imperfect elements
 \item 3D elements and parallax
-\item
-\item \cite{UItrends}
+\item Rich color and sensuous typography
+\item Long scrolling and parallax technique websites 
+\cite{UItrends}
+\cite{UnderstandingUI}
 \end{itemize}
 
 \section{User Experience} \label{UX}
 \subsection{Methods}
-\cite{AllUX}
+The most used method of developing UX nowadays is waterfall method, other ones are Agile and HCD(Human-centered design).
+
 \cite{WaterfallUX}
 \subsection{Stages of creating}	
-\cite{UXstages}
+\begin{center}
+\begin{tabular}{ |c|c| } 
+ \hline
+ Waterfall & Human-centered design \\ 
+\hline\hline
+ 1.Requirements & 1.Creating UX vision \\ 
+\hline
+ 2.Design & 2.Creating high-level concept \\ 
+ \hline
+3.Implementation& 3.Designing and developing the interaction and visual style\\ 
+ \hline 
+4.Validation & 4.Evaluating the design against requirements\\ 
+ \hline
+5.Maintenance&  \\ 
+ \hline
+\end{tabular}
+\end{center}
+\cite{AllUX}
+\begin{enumerate}
+\item Creating UX Vision : goal is to define UX vision as a high level understanding of the user value the app will deliver to the end user, it will help in determining the essence of the app for the user. When the purpose of an app is already known, it’s not always necessary.
+\item Creating a High-Level Concept : it can be a drawing or a prototype, visual presentation that makes the vision more concrete and helps to connect it. 
+\item Designing and Developing Interaction and Visual Style : the moment when starts UI developing, when conceptual user flow refining to an implementable design.
+\item Evaluating UX of the Outcome : scope the project to simple and focused functions customers really need, dropping unneeded features that will slow down the project and take costs.\cite{Kuusinen2014}
+\end{enumerate}
+
 \subsection{Trends}
 
 \section{Discussion}
+Although mobile app development tend to be much faster than development of a desktop applications, it seems easier to have more flexible processes and roles, but it’s not always right. Most of the times you can get better result having two different people being responsible for UX and UI, because UX specialist is the one who needs to know style guides for every platform, and UI designer is expert at things like aesthetics and platform design therefore can make design much more appealing.
 \subsection{Future of UI and UX}
+UX, as part of service industry, will only gain popularity and spread to new markets as health infrastructure, along with the fact that TVs, tablets and phones will evolving and the demand for them does not decreases. Artificial intelligence and machine learning will help designers generating thousands of variants of logos or layouts, but the main role will be left behind man, because affective user research and user testing, for instance, are complex and require emotional intelligence and, importantly, an ability to understand needs and behaviors.
+
+Also Voice User Interfaces become more popular every year:  Apple has Siri, Google has Google Assistant, Microsoft has Cortana, and Amazon has Alexa. It’s likely that users will find voice interfaces valuable in situations where visual attention or touch interaction are occupied.
 \cite{FutureDesign}
 \subsection{Qualities of the UX designer of tomorrow}
-\cite{DesignerTomorrow}
+\begin{itemize}
+\item Adaptable
+
+The past decade of change shows us that design must constantly adapt as a discipline, in order to meet new client, customer, and user needs, but some core principles will stay for a long time. Skills like user research, user journey design, wireframes, prototypes, high-fidelity visual design, user testing, and even coding won't be superfluous.
+\item Detail-oriented, but capable of seeing the big picture
+
+Employers will look for detail-oriented UX designers who can deliver improvements at the micro level to upgrade existing design but also to appraise wider design, tech, and market trends, and scan the horizon for possible changes.\cite{DesignerTomorrow}
+\end{itemize}
+
 \section{Conclusion}
 The first step to solving any task is to define it. Understanding the
-differences between UI and UX will help you more competently approach design projects, distribute work and correctly lead the process of creating a design. There are few principles and concepts that you should keep in mind designing an app, that I wrote in this article, and they will help you create the very good design that everyone strives for.	
+differences between UI and UX will help you more competently approach design projects, distribute work and correctly lead the process of creating a design. There are few principles and concepts that you should keep in mind designing an app, that I wrote in this article, and they will help you create the very good design that everyone strives for.	\cite{Kuusinen2014}
 
 %\acknowledgement{Ak niekomu chcete poďakovať\ldots}
 
 %\DeclareUnicodeCharacter{Ukrainian} \cite{beregovyi2019difference}
-\cite{Kuusinen2014}
+
 
 
 
